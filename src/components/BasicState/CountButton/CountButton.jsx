@@ -1,8 +1,8 @@
 function CountButton( { value, onClick, text}) {
   return (
-    <>
-      <button value={value} onClick={onClick}>{text}</button>
-    </>
+    <button value={value} onClick={onClick}>
+      {text}
+    </button>
   );
 }
 
