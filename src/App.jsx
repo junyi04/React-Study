@@ -7,6 +7,8 @@ import CountState from './components/BasicState/CountState'
 import DomRef from './components/DomRef/DomRef'
 import Effect1 from './components/Effect/Effect1/Effect1'
 import Effect2 from './components/Effect/Effect2/Effect2'
+import Emotion1 from './components/Emotion/Emotion1/Emotion1'
+import Emotion2 from './components/Emotion/Emotion2/Emotion2'
 import InputState1 from './components/InputState1/InputState1'
 import InputState2 from './components/InputState2/InputState2'
 import InputState3 from './components/InputState3/InputState3'
@@ -17,6 +19,7 @@ import Render from './components/LifeCycle/Render'
 import FruitsFilter from './components/Practice/FruitsFilter/FruitsFilter'
 import Membership from './components/Practice/Membership/Membership'
 import UserProfile from './components/Practice/UserProfile/UserProfile'
+import Index from './components/TodoList/pages'
 
 function App() {
   return (
@@ -38,7 +41,10 @@ function App() {
       {/* <Effect2 /> */}
       {/* <FruitsFilter /> */}
       {/* <UserProfile /> */}
-      <Membership />
+      {/* <Membership /> */}
+      {/* <Emotion1 /> */}
+      {/* <Emotion2 /> */}
+      <Index />
     </>
   );
 }
