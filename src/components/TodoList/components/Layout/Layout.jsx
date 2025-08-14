@@ -1,13 +1,16 @@
-/** @jsxImpotSource @emotion/react */
+/** @jsxImportSource @emotion/react */
 import Header from "../Header/Header";
 import * as s from "./styles";
 
-function Layout() {
+function Layout({ children }) {
   return (
     <div css={s.layout}>
-      <Header />
+      <div css={s.container}>
+        <Header />
+        {children}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
