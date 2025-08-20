@@ -19,6 +19,7 @@ export const listContainer = css`
     overflow-y: auto;
 
     & > li {
+      position: relative;
       display: flex;
       box-sizing: border-box;
       padding: 5px 15px;
@@ -37,6 +38,7 @@ export const listContainer = css`
           height: 25px;
           border: 1px solid #dbdbdb;
           box-sizing: border-box;
+          margin-right: 10px;
         }
 
         &:checked + label::after {
@@ -86,7 +88,7 @@ export const hiddenTrashBox = css`
 `;
 
 export const trashBox = css`
-transform: all 0.2s;
+  transition: all 0.3s;
   position: absolute;
   top: 0;
   right: -46px;
@@ -97,6 +99,6 @@ transform: all 0.2s;
   align-items: center;
   background-color: #ea0808;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
 `;

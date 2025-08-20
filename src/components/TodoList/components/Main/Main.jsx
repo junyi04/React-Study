@@ -51,8 +51,11 @@ function Main({ todoList, setTodoList }) {
                 {todo.content}
               </label>
               <div css={s.hiddenTrashBox}>
-                <div css={s.trashBox}>
-                  <IoIosTrash />
+                <div css={s.trashBox} onClick={() => {
+                    setTodoList((prev) => prev.filter((t) => t.id !== todo.id));
+                  }}
+                >
+                  <IoIosTrash style={{ marginBottom: '10px' }} />
                 </div>
               </div>
             </li>
